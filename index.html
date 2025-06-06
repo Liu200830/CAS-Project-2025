@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双人贪吃蛇大战</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="main-menu" class="screen">
+            <h1>双人贪吃蛇大战</h1>
+            <button id="start-button">开始游戏</button>
+            <div class="high-score">最高分: <span id="high-score">0</span></div>
+            <div class="instructions">
+                <h2>游戏说明</h2>
+                <div class="player-instructions">
+                    <div class="player-1">
+                        <h3>玩家1 (绿色蛇)</h3>
+                        <p>使用 WASD 键控制</p>
+                    </div>
+                    <div class="player-2">
+                        <h3>玩家2 (蓝色蛇)</h3>
+                        <p>使用方向键控制</p>
+                    </div>
+                </div>
+                <p>吃到食物可以增加长度和得分</p>
+                <p>撞到墙壁或对方/自己的身体会死亡</p>
+                <p>按空格键暂停游戏</p>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div class="game-header">
+                <div class="player-score">
+                    玩家1分数: <span id="player1-score">0</span>
+                </div>
+                <button id="pause-button">暂停</button>
+                <div class="player-score">
+                    玩家2分数: <span id="player2-score">0</span>
+                </div>
+            </div>
+            <canvas id="game-canvas"></canvas>
+        </div>
+
+        <div id="game-over" class="screen hidden">
+            <h2>游戏结束!</h2>
+            <div id="winner-text"></div>
+            <div class="final-scores">
+                <div class="player-score">玩家1最终得分: <span id="final-score-1">0</span></div>
+                <div class="player-score">玩家2最终得分: <span id="final-score-2">0</span></div>
+            </div>
+            <button id="restart-button">再玩一次</button>
+            <button id="menu-button">返回主菜单</button>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html> 

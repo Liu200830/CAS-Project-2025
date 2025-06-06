@@ -1,0 +1,16 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "A classic Snake game implementation using HTML5 Canvas and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.110",
+    "typescript": "^5.8.3",
+    "vite": "^4.5.14"
+  }
+}
